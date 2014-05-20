@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<seuServerPlugin xmlns="http://seu.sourceforge.net/schema/serverplugin"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://seu.sourceforge.net/schema/ServerPlugin.xsd">
+	<name>Zarafa plugin</name>
+	<version>${pom.version}</version>
+	<agent>
+		<name>ZarafaLocalAgent</name>
+		<javaClass>com.soffid.iam.agent.zarafa.ZarafaAgent</javaClass>
+		<userInterface>ZarafaAgent.zul</userInterface>
+		<enableAccessControl>true</enableAccessControl>
+	</agent>
+</seuServerPlugin>
